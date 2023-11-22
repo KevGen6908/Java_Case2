@@ -11,5 +11,5 @@ public interface Tree<E> extends Iterable{
     void clear();
     E first();
     E last();
-    boolean containsAll(TreeSet<E> e); // for unit test!!!
+    boolean containsAll(TreeSet<E> e); // for unit test
 }

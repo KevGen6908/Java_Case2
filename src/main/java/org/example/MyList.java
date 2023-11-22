@@ -2,14 +2,13 @@ package org.example;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-// Общий интерфейс для CustomList и LinkedList
+
 public interface MyList<E> extends Iterable<E> {
     void add(E element);
     E get(int index);
     int size();
 }
 
-// Реализация динамического массива
 class CustomList<E> implements MyList<E> {
     private Node<E> head;
     private int size;
@@ -85,7 +84,6 @@ class CustomList<E> implements MyList<E> {
     }
 }
 
-// Реализация связного списка
 class LinkedList<E> implements MyList<E> {
     private Node<E> head;
     private int size;

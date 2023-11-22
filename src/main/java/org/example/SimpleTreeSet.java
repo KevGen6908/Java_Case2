@@ -288,6 +288,7 @@ public class SimpleTreeSet<E> implements Tree<E> {
             int hash = 31;
             hash = hash * 17 + element.hashCode();
             return hash;
+            //
         }
 
     }
